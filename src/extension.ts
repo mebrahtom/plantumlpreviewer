@@ -3,7 +3,7 @@
 import * as vscode from 'vscode';
 
 const pako = require('pako');
-const utf8bytes =require('utf8-bytes');
+const utf8bytes = require('utf8-bytes');
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 function encode64(data: any) {
@@ -64,13 +64,13 @@ export function activate(context: vscode.ExtensionContext) {
     // The command has been defined in the package.json file
     // Now provide the implementation of the command with registerCommand
     // The commandId parameter must match the command field in package.json
-    let disposable = vscode.commands.registerCommand('extension.helloWorld', () => {
+    let disposable = vscode.commands.registerCommand('extension.pumlpreviewer', () => {
         // The code you place here will be executed every time your command is executed
 
         // Display a message box to the user
         const panel = vscode.window.createWebviewPanel(
-            'treqspreview', // Identifies the type of the webview. Used internally
-            'Plantuml preview', // Title of the panel displayed to the user
+            'pumlpreviewer', // Identifies the type of the webview. Used internally
+            'Plantuml previewer', // Title of the panel displayed to the user
             vscode.ViewColumn.One, // Editor column to show the new webview panel in.
             {
                 enableScripts: true
@@ -102,7 +102,7 @@ function showPreview() {
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Plantuml preview</title>
+    <title>Plantuml preview</title>
 </head>
 <body>
 <div id="tracelinks">

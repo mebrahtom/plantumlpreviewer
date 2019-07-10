@@ -1,42 +1,59 @@
 {
-	"name": "plantumlpreviewer",
-	"displayName": "plantumlpreviewer",
-	"description": "Plantuml previewer for visual studio code editor",
-	"version": "0.0.1",
-	"engines": {
-		"vscode": "^1.36.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:extension.helloWorld"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"postinstall": "node ./node_modules/vscode/bin/install",
-		"test": "npm run compile && node ./node_modules/vscode/bin/test"
-	},
-	"devDependencies": {
-		"typescript": "^3.3.1",
-		"vscode": "^1.1.28",
-		"tslint": "^5.12.1",
-		"@types/node": "^10.12.21",
-		"@types/mocha": "^2.2.42"
-	},
-	"dependencies": {
-		"pako": "^1.0.10",
-		"utf8-bytes": "0.0.1"
-	}
+    "name": "plantumlpreviewer",
+    "displayName": "plantumlpreviewer",
+    "description": "Plantuml previewer for visual studio code editor",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.36.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.pumlpreviewer"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.pumlpreviewer",
+                "title": "Preview current plantuml code..."
+            }
+        ],
+        "menus": {
+            "editor/context": [
+                {
+                    "when": "editorTextFocus && resourceExtname == .puml",
+                    "command": "extension.pumlpreviewer",
+                    "group": "1_preview"
+                }
+            ]
+        },
+        "keybindings": [
+            {
+                "command": "extension.pumlpreviewer",
+                "key": "ctrl+p",
+                "mac": "cmd+p",
+                "when": "editorTextFocus && resourceExtname == .puml"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^3.3.1",
+        "vscode": "^1.1.28",
+        "tslint": "^5.12.1",
+        "@types/node": "^10.12.21",
+        "@types/mocha": "^2.2.42"
+    },
+    "dependencies": {
+        "pako": "^1.0.10",
+        "utf8-bytes": "0.0.1"
+    }
 }

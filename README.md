@@ -11,7 +11,7 @@ The plantuml previewer extension views a plantuml code as UML diagram.
 - PlantUML files must be saved with `.puml` extension.
 - You must be connected to the Internet. Because the corresponding UML diagrams are fetched from the plantuml online server (<http://plantuml.com/).>
   
-##Usage
+## Usage
 
 - Install the extension
 - Open a plantuml file in vscode

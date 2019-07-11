@@ -55,6 +55,27 @@ function encode6bit(b: number) {
     }
     return '?';
 }
+
+function getPlantUMLText() {
+    let textContent = '';
+    if (vscode.workspace.workspaceFolders) {
+        const currentWindow = vscode.window.activeTextEditor;
+        if (currentWindow) {
+            textContent = currentWindow.document.getText();
+        }
+    }
+    return textContent;
+}
+function getURL(data: string) {
+    let codedText = '';
+    let url = '';
+    //Encode the text in utf-8
+    data = utf8bytes(data);
+    let deflated = pako.deflate(data, { level: 9, to: 'string', raw: true });
+    codedText = encode64(deflated);
+    url = "http://www.plantuml.com/plantuml/img/" + codedText;
+    return url;
+}
 export function activate(context: vscode.ExtensionContext) {
 
     // Use the console to output diagnostic information (console.log) and errors (console.error)
@@ -83,20 +104,8 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 function showPreview() {
-    let url = '';
-    let codedText = '';
-    if (vscode.workspace.workspaceFolders) {
-        const currentWindow = vscode.window.activeTextEditor;
-        if (currentWindow) {
-            let textContent = currentWindow.document.getText();
-            //Encode the text in utf-8
-            let data = utf8bytes(textContent);
-            let deflated = pako.deflate(data, { level: 9, to: 'string', raw: true });
-            codedText = encode64(deflated);
-            url = "http://www.plantuml.com/plantuml/img/" + codedText;
-        }
-    }
-
+    let plantUMLText = getPlantUMLText();
+    let url = getURL(plantUMLText);
     return `<!DOCTYPE html>
 <html lang="en">
 <head>

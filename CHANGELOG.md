@@ -1,9 +1,13 @@
-# Change Log
+# Change Log for Plantumlpreviewer
 
-All notable changes to the "plantumlpreviewer" extension will be documented in this file.
+All notable changes to the "plantumlpreviewer" extension are documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## Releases
 
-## [Unreleased]
+- 0.0.2
+  - CHANGELOG.md updated
+  
+### Version 0.0.1
 
 - Initial release
+  

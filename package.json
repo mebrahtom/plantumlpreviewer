@@ -3,6 +3,7 @@
     "displayName": "plantumlpreviewer",
     "description": "Plantuml previewer for visual studio code editor",
     "version": "0.0.1",
+    "publisher": "Mebrahtom",
     "engines": {
         "vscode": "^1.36.0"
     },
@@ -55,5 +56,9 @@
     "dependencies": {
         "pako": "^1.0.10",
         "utf8-bytes": "0.0.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mebrahtom/plantumlpreviewer.git"
     }
 }

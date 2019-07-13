@@ -24,4 +24,8 @@ All notable changes to the "plantUML Previewer" extension are documented in this
 ### Version 0.4.0
 
 - Documentation updated
+
+### Version 0.5.0
+
+- Documentation updated
   

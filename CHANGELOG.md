@@ -16,3 +16,8 @@ All notable changes to the "plantUML Previewer" extension are documented in this
 ### Version 0.2.0
 
 - Documentation updated
+  
+### Version 0.3.0
+
+- Context menu title changed to "Preview current PlantUML code"
+  

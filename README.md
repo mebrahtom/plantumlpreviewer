@@ -1,6 +1,7 @@
 # PlantUML previewer
 
 The PlantUML Previewer extension views a PlantUML code as UML diagram.
+
 Previewing a PlantUML file couldn't be simpler. No need of installing `GraphViz` or other dependencies.
 
 ## Features
@@ -15,12 +16,12 @@ Previewing a PlantUML file couldn't be simpler. No need of installing `GraphViz`
 ## Usage
 
 - Install the extension
-- Open a plantuml file in vscode
-- Right click on the plantuml file and select "Preview plantuml code...". The diagram will open in a new tab.
+- Open a PlantUML file in Visual Studio Code editor
+- Right click on the plantuml file and select `"Preview current PlantUML code"`. The diagram will open in a new tab.
 - Short cut keys
   - You must click anywhere on the PlantUML file and hit the following short cut keys:
-  - CTRL + P (Windows)
-  - CMD + P (Mac)
+    - CTRL + P (Windows)
+    - CMD + P (Mac)
 
 ## Release Notes
 
@@ -30,5 +31,8 @@ Previewing a PlantUML file couldn't be simpler. No need of installing `GraphViz`
   
 ### Version 0.1.0
 
-- Display name changed to PlantUML Previewer
-- Documentation updated
+- Minor revision
+  
+### Version 0.2.0
+
+- Minor revision

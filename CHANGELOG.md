@@ -1,4 +1,4 @@
-# Change Log for Plantumlpreviewer
+# Change Log for PlantUML Previewer
 
 All notable changes to the "plantUML Previewer" extension are documented in this file.
 
@@ -12,4 +12,7 @@ All notable changes to the "plantUML Previewer" extension are documented in this
 
 - Display name changed to PlantUML Previewer
 - Shortcut keys included in documentation
-  
+
+### Version 0.2.0
+
+- Documentation updated

@@ -2,7 +2,7 @@
     "name": "plantumlpreviewer",
     "displayName": "PlantUML Previewer",
     "description": "Plantuml previewer for visual studio code editor",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "publisher": "Mebrahtom",
     "engines": {
         "vscode": "^1.36.0"
@@ -18,7 +18,7 @@
         "commands": [
             {
                 "command": "extension.pumlpreviewer",
-                "title": "Preview current plantuml code..."
+                "title": "Preview current PlantUML code"
             }
         ],
         "menus": {

@@ -1,6 +1,6 @@
 {
     "name": "plantumlpreviewer",
-    "displayName": "plantumlpreviewer",
+    "displayName": "PlantUML Previewer",
     "description": "Plantuml previewer for visual studio code editor",
     "version": "0.0.1",
     "publisher": "Mebrahtom",

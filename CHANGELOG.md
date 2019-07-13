@@ -8,3 +8,8 @@ All notable changes to the "plantumlpreviewer" extension are documented in this 
 
 - Initial release
   
+### Version 0.1.0
+
+- Display name changed to PlantUML Previewer
+- Shortcut keys included in documentation
+  

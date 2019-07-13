@@ -1,6 +1,6 @@
 # Change Log for Plantumlpreviewer
 
-All notable changes to the "plantumlpreviewer" extension are documented in this file.
+All notable changes to the "plantUML Previewer" extension are documented in this file.
 
 ## Releases
 

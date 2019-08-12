@@ -48,3 +48,7 @@ Previewing a PlantUML file couldn't be simpler. No need of installing `GraphViz`
 ### Version 0.5.0
 
 - Minor revision
+  
+### Version 0.6.0
+
+- Minor revision

@@ -28,4 +28,8 @@ All notable changes to the "plantUML Previewer" extension are documented in this
 ### Version 0.5.0
 
 - Documentation updated
+
+- ### Version 0.6.0
+
+- Scale diagram size based on screen size
   

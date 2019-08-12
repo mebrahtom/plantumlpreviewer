@@ -117,7 +117,7 @@ function showPreview() {
 <div id="tracelinks">
 
 </div>
-    <img src=${url} alt="UML diagram" width="300" />
+    <img src=${url} alt="UML diagram" width="100%" />
 </body>
 </html>`;
 }
